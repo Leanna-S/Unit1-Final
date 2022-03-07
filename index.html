@@ -12,7 +12,7 @@
         Course: Software Development 20S
         Teacher: Mr. Hardman
         School: Pembina Trails Early College
-        Date Last Modified:
+        Date Last Modified: 3/7/2022
     -->
     <nav>
       <ul>
@@ -50,37 +50,59 @@
     <section>
       <h2>Rate my art!</h2>
       <form>
-        <label for="rating-choice">Pick a rating:</label><br />
+        <label for="rating-choice">Pick a rating:</label>
+        <br />
+        <!--This type is list type. it works as a drop down box and there can be multiple selections which are pre defined
+          Instead of using the 'type' tag, the 'list' refers to the datalist element and it connects with the datalist tag
+        https://www.w3schools.com/tags/att_input_list.asp-->
         <input list="rating-levels" id="rating-choice" name="rating-choice" />
-
+        <!--these are the selections ot the input list, using the 'rating-levels' tag to connect them. it doesn't work id the ids are not the same
+        https://www.w3schools.com/tags/tag_datalist.asp-->
         <datalist id="rating-levels">
           <option value="5 stars"></option>
           <option value="4 stars"></option>
           <option value="3 stars"></option>
           <option value="2 stars"></option>
-          <option value="1 star"></option></datalist
-        ><br /><br />
+          <option value="1 star"></option>
+        </datalist>
+        <br />
+        <br />
         <input type="submit" value="Submit" />
       </form>
-      <br /><br />
+      <br />
+      <br />
     </section>
 
     <section>
       <h2>Leave a review of my art!</h2>
+      <!--This type is the text type and it is used to taking in text - in this case a username-->
       <form>
-        <label for="review-username">Username:</label><br />
-        <input type="text" id="review-username" name="review-username" /><br />
-        <label for="review-email">Email:</label><br />
-        <input type="email" id="review-email" name="review-email" /><br /><br />
-        <label for="review-text">Write your review:</label><br />
-
+        <label for="review-username">Username:</label>
+        <br />
+        <input
+          type="text"
+          id="review-username"
+          name="review-username"
+          required
+        /><br />
+        <!--This type is email type and it is used to taking in emails specifically-->
+        <label for="review-email">Email:</label>
+        <br />
+        <input type="email" id="review-email" name="review-email" required />
+        <br /><br />
+        <label for="review-text">Write your review:</label>
+        <br />
+        <!--This type is the text area type. It is a paragraph section where you can input text-->
         <textarea
           id="review-text"
           name="review-text"
           rows="4"
           cols="50"
-        ></textarea
-        ><br /><br />
+          required
+        >
+        </textarea>
+        <br />
+        <br />
         <input type="submit" value="Submit" />
       </form>
     </section>
