@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Unit 1 Final</title>
   </head>
   <body>
@@ -21,128 +22,161 @@
       </ul>
     </nav>
 
-    <section>
-      <header>
-        <h1><u>Leanna's Digital Art</u></h1>
-      </header>
-      <p>
-        This website contains Leanna's art and some of the pictures she has
-        drawn on her iPad.
-      </p>
-    </section>
-
-    <section>
-      <header>
-        <h2>Most Recent Art</h2>
-      </header>
-      <figure>
-        <h3>Animal Tamer</h3>
-        <img
-          src="pictures\animallove.jpg"
-          alt="Woman in cloak surrounded with two wolves and an owl on her shoulder"
-        />
-        <figcaption>
-          Digitally Painted | 8 Hours | iPad Air 4 | Procreate
-        </figcaption>
-      </figure>
-    </section>
-
-    <section>
-      <h2>Rate my art!</h2>
-      <form>
-        <label for="rating-choice">Pick a rating:</label>
-        <br />
-        <!--This type is list type. it works as a drop down box and there can be multiple selections which are pre defined
-          Instead of using the 'type' tag, the 'list' refers to the datalist element and it connects with the datalist tag
-        https://www.w3schools.com/tags/att_input_list.asp-->
-        <input list="rating-levels" id="rating-choice" name="rating-choice" />
-        <!--these are the selections ot the input list, using the 'rating-levels' tag to connect them. it doesn't work id the ids are not the same
-        https://www.w3schools.com/tags/tag_datalist.asp-->
-        <datalist id="rating-levels">
-          <option value="5 stars"></option>
-          <option value="4 stars"></option>
-          <option value="3 stars"></option>
-          <option value="2 stars"></option>
-          <option value="1 star"></option>
-        </datalist>
-        <br />
-        <br />
-        <input type="submit" value="Submit" />
-      </form>
+    <main>
+      <section>
+        <header>
+          <h1><u>Leanna's Digital Art</u></h1>
+        </header>
+        <p>
+          This website contains Leanna's art and some of the pictures she has
+          drawn on her iPad.
+        </p>
+      </section>
       <br />
-      <br />
-    </section>
 
-    <section>
-      <h2>Leave a review of my art!</h2>
-      <!--This type is the text type and it is used to taking in text - in this case a username-->
-      <form>
-        <label for="review-username">Username:</label>
-        <br />
-        <input
-          type="text"
-          id="review-username"
-          name="review-username"
-          required
-        /><br />
-        <!--This type is email type and it is used to taking in emails specifically-->
-        <label for="review-email">Email:</label>
-        <br />
-        <input type="email" id="review-email" name="review-email" required />
-        <br /><br />
-        <label for="review-text">Write your review:</label>
-        <br />
-        <!--This type is the text area type. It is a paragraph section where you can input text-->
-        <textarea
-          id="review-text"
-          name="review-text"
-          rows="4"
-          cols="50"
-          required
+      <section>
+        <header>
+          <h2>Most Recent Art</h2>
+        </header>
+        <figure>
+          <h3>Animal Tamer</h3>
+          <img
+            src="pictures\animallove.jpg"
+            alt="Woman in cloak surrounded with two wolves and an owl on her shoulder"
+          />
+          <figcaption>
+            Digitally Painted | 8 Hours | iPad Air 4 | Procreate
+          </figcaption>
+        </figure>
+      </section>
+      <br />
+
+      <section>
+        <article>
+          <header>
+            <h2>Rate my art!</h2>
+          </header>
+          <form>
+            <label for="rating-choice">Pick a rating:</label>
+            <br />
+            <!--This type is list type. it works as a drop down box and there can be multiple selections which are pre defined
+              Instead of using the 'type' tag, the 'list' refers to the datalist element and it connects with the datalist tag
+            https://www.w3schools.com/tags/att_input_list.asp-->
+            <input
+              list="rating-levels"
+              id="rating-choice"
+              name="rating-choice"
+            />
+            <!--these are the selections ot the input list, using the 'rating-levels' tag to connect them. it doesn't work id the ids are not the same
+            https://www.w3schools.com/tags/tag_datalist.asp-->
+            <datalist id="rating-levels">
+              <option value="5 stars"></option>
+              <option value="4 stars"></option>
+              <option value="3 stars"></option>
+              <option value="2 stars"></option>
+              <option value="1 star"></option>
+            </datalist>
+            <br />
+            <br />
+            <input type="submit" value="Submit" />
+          </form>
+          <br />
+          <br />
+        </article>
+      </section>
+      <br />
+
+      <section>
+        <article>
+          <header>
+            <h2>Leave a review of my art!</h2>
+          </header>
+          <!--This type is the text type and it is used to taking in text - in this case a username-->
+          <form>
+            <label for="review-username">Username:</label>
+            <br />
+            <input
+              type="text"
+              id="review-username"
+              name="review-username"
+              required
+            /><br />
+            <!--This type is email type and it is used to taking in emails specifically-->
+            <label for="review-email">Email:</label>
+            <br />
+            <input
+              type="email"
+              id="review-email"
+              name="review-email"
+              required
+            />
+            <br /><br />
+            <label for="review-text">Write your review:</label>
+            <br />
+            <!--This type is the text area type. It is a paragraph section where you can input text-->
+            <textarea
+              id="review-text"
+              name="review-text"
+              rows="4"
+              cols="50"
+              required
+            >
+            </textarea>
+            <br />
+            <br />
+            <input type="submit" value="Submit" />
+          </form>
+        </article>
+      </section>
+      <br />
+
+      <section>
+        <h2>Pros And Cons Of Digital Art</h2>
+        <table>
+          <tr>
+            <th>Pros</th>
+            <th>Cons</th>
+          </tr>
+          <tr>
+            <td>The ability to undo mistakes with a click of a button</td>
+            <td>Harder to display textures in a digital drawing</td>
+          </tr>
+          <tr>
+            <td>Cheap, don't have to buy art supplies</td>
+            <td>People thinking that its not real art</td>
+          </tr>
+          <tr>
+            <td>Tools such as layers or blending tools</td>
+            <td>No physical product, only a digital copy</td>
+          </tr>
+        </table>
+      </section>
+      <br />
+
+      <section>
+        <header>
+          <h2>Check out what I used to draw all this!</h2>
+        </header>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/Hi-CtwX3u0w"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
         >
-        </textarea>
-        <br />
-        <br />
-        <input type="submit" value="Submit" />
-      </form>
-    </section>
-
-    <section>
-      <h2>Pros And Cons Of Digital Art</h2>
-      <table>
-        <tr>
-          <th>Pros</th>
-          <th>Cons</th>
-        </tr>
-        <tr>
-          <td>The ability to undo mistakes with a click of a button</td>
-          <td>Harder to display textures in a digital drawing</td>
-        </tr>
-        <tr>
-          <td>Cheap, don't have to buy art supplies</td>
-          <td>People thinking that its not real art</td>
-        </tr>
-        <tr>
-          <td>Tools such as layers or blending tools</td>
-          <td>No physical product, only a digital copy</td>
-        </tr>
-      </table>
-    </section>
-
-    <section>
-      <header>
-        <h2>Check out what I used to draw all this!</h2>
-      </header>
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/Hi-CtwX3u0w"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      >
-      </iframe>
-    </section>
+        </iframe>
+      </section>
+    </main>
+    <footer>
+      <p>Author: Leanna Szypowski</p>
+      <!--Found the mail to tag on this unrealated page, in an example, but found it interesting so i added it
+        https://www.w3schools.com/html/html5_semantic_elements.asp-->
+      <p>
+        Email:
+        <a href="mailto:leannaszypowski@gmail.com">leannaszypowski@gmail.com</a>
+      </p>
+    </footer>
   </body>
 </html>
