@@ -1,3 +1,4 @@
+/* table modifications, mostly colour and border */
 td,
 th {
   border-style: solid;
@@ -11,30 +12,41 @@ th {
 td {
   background-color: white;
 }
+/* sets table width, takes up full screen */
 table {
   width: 100%;
 }
+/* Styles the background, and the entire website */
+body {
+  background-color: darkslategray;
+  margin: 0;
+}
+/* main body, excluding nav and footer */
 main {
   margin-left: 20px;
   margin-right: 20px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+/* sections, adds borders, colour and padding */
 section {
   border-style: solid;
   padding: 10px;
   background-color: white;
 }
+
+/* headers, adds header colours, padding, and borders */
 header {
   padding: 10px;
   text-align: center;
   border-style: solid;
   border-color: darkslategray;
-  text-indent: 40px;
-  overflow: hidden;
   color: white;
   background-color: black;
+  margin-bottom: 10px;
 }
+/* footer */
 footer {
   text-indent: 40px;
   overflow: hidden;
@@ -42,11 +54,30 @@ footer {
   background-color: black;
 }
 
+/* nav, hides excess and sets color */
 nav {
   overflow: hidden;
   color: white;
   background-color: black;
 }
+/* list item with an 'a' value (links). The float makes the list items in a row.
+this is used with display as display handles how different values are displayed,
+block separates this list even more, so you get a nice menu look*/
+li a {
+  float: left;
+  display: block;
+  text-align: center;
+  color: white;
+  padding: 16px 16px;
+  text-decoration: none;
+}
+/* This adds a hover effect when hovering over the nav bar, changes colours */
+li a:hover {
+  background-color: white;
+  color: black;
+}
+
+/* This styles the unordered lists - specifically the nav bar */
 ul {
   list-style-type: none;
   margin: 0;
@@ -55,18 +86,20 @@ ul {
   width: 100%;
   background-color: black;
 }
-li a {
-  float: left;
+
+/* centers the iframe */
+iframe {
   display: block;
+  margin: 0 auto;
+}
+
+/* adds a colour to the article */
+article {
+  background-color: lightgray;
+  padding: 10px;
+}
+/* This centers figures, or where drawn pictures are being displayed */
+
+figure {
   text-align: center;
-  color: white;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-li a:hover {
-  background-color: white;
-  color: black;
-}
-body {
-  background-color: darkslategray;
 }

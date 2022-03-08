@@ -13,12 +13,14 @@
         Course: Software Development 20S
         Teacher: Mr. Hardman
         School: Pembina Trails Early College
-        Date Last Modified: 3/7/2022
+        Date Last Modified: 3/8/2022
     -->
     <nav>
       <ul>
-        <li><a href="charcoal.html">Charcoal Styled Art</a></li>
-        <li><a href="painted.html">Painted Styled Art</a></li>
+        <div class="navigation">
+          <li><a href="charcoal.html">Charcoal Styled Art</a></li>
+          <li><a href="painted.html">Painted Styled Art</a></li>
+        </div>
       </ul>
     </nav>
 
@@ -48,27 +50,24 @@
             Digitally Painted | 8 Hours | iPad Air 4 | Procreate
           </figcaption>
         </figure>
-      </section>
-      <br />
-
-      <section>
         <article>
           <header>
             <h2>Rate my art!</h2>
           </header>
           <form>
-            <label for="rating-choice">Pick a rating:</label>
+            <label for="rating-choice"><b>Pick a rating:</b></label>
             <br />
             <!--This type is list type. it works as a drop down box and there can be multiple selections which are pre defined
-              Instead of using the 'type' tag, the 'list' refers to the datalist element and it connects with the datalist tag
-            https://www.w3schools.com/tags/att_input_list.asp-->
+                Instead of using the 'type' tag, the 'list' refers to the datalist element and it connects with the datalist tag
+              https://www.w3schools.com/tags/att_input_list.asp-->
             <input
               list="rating-levels"
               id="rating-choice"
               name="rating-choice"
             />
-            <!--these are the selections ot the input list, using the 'rating-levels' tag to connect them. it doesn't work id the ids are not the same
-            https://www.w3schools.com/tags/tag_datalist.asp-->
+            <!--these are the selections ot the input list, using the 'rating-levels' tag to connect them.
+              it doesn't work if the ids are not the same
+              https://www.w3schools.com/tags/tag_datalist.asp-->
             <datalist id="rating-levels">
               <option value="5 stars"></option>
               <option value="4 stars"></option>
@@ -91,9 +90,10 @@
           <header>
             <h2>Leave a review of my art!</h2>
           </header>
-          <!--This type is the text type and it is used to taking in text - in this case a username-->
+          <!--This type is the text type and it is used to taking in text - in this case a username to attach to the review
+          As for all of them, the 'for' label connects it to the input 'id' - meaning they are the same-->
           <form>
-            <label for="review-username">Username:</label>
+            <label for="review-username"><b>Username:</b></label>
             <br />
             <input
               type="text"
@@ -101,8 +101,8 @@
               name="review-username"
               required
             /><br />
-            <!--This type is email type and it is used to taking in emails specifically-->
-            <label for="review-email">Email:</label>
+            <!--This type is email type and it is used to taking in emails specifically so you can contact them about the review-->
+            <label for="review-email"><b>Email:</b></label>
             <br />
             <input
               type="email"
@@ -111,9 +111,10 @@
               required
             />
             <br /><br />
-            <label for="review-text">Write your review:</label>
+            <label for="review-text"><b>Write your review:</b></label>
             <br />
-            <!--This type is the text area type. It is a paragraph section where you can input text-->
+            <!--This type is the text area type. It is a paragraph section where you can input text,
+              this is where the actual review would be written-->
             <textarea
               id="review-text"
               name="review-text"
@@ -131,23 +132,27 @@
       <br />
 
       <section>
-        <h2>Pros And Cons Of Digital Art</h2>
+        <header>
+          <h2>Pros And Cons Of Digital Art</h2>
+        </header>
         <table>
           <tr>
             <th>Pros</th>
             <th>Cons</th>
           </tr>
           <tr>
-            <td>The ability to undo mistakes with a click of a button</td>
-            <td>Harder to display textures in a digital drawing</td>
+            <td>
+              The ability to <b>undo mistakes</b> with a click of a button
+            </td>
+            <td><b>Harder to display textures</b> in a digital drawing</td>
           </tr>
           <tr>
-            <td>Cheap, don't have to buy art supplies</td>
-            <td>People thinking that its not real art</td>
+            <td><b>Cheap</b>, don't have to buy art supplies</td>
+            <td>People thinking that its <b>not real art</b></td>
           </tr>
           <tr>
-            <td>Tools such as layers or blending tools</td>
-            <td>No physical product, only a digital copy</td>
+            <td>Tools such as <b>layers</b> or <b>blending tools</b></td>
+            <td><b>No physical product</b>, only a digital copy</td>
           </tr>
         </table>
       </section>
