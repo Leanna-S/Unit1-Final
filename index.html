@@ -117,6 +117,17 @@
               id="review-email"
               name="review-email"
               required
+            /><br />
+            <!--This type is password type. passwords are required and must be at least 8 chars long
+              - used to verify the user is who they say they are-->
+            <label for="review-password"><b>Password:</b></label>
+            <br />
+            <input
+              type="password"
+              id="review-password"
+              name="review-password"
+              minlength="8"
+              required
             />
             <br /><br />
             <label for="review-text"><b>Write your review:</b></label>
@@ -129,8 +140,7 @@
               rows="4"
               cols="50"
               required
-            >
-            </textarea>
+            ></textarea>
             <br />
             <br />
             <input type="submit" value="Submit" />

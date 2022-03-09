@@ -142,3 +142,6 @@ img {
   border-style: solid;
   border-color: darkslategray;
 }
+textarea {
+  text-align: left;
+}
