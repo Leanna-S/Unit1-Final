@@ -1,3 +1,100 @@
+/* Styles the background, and the entire website */
+body {
+  margin: 0;
+
+  background-color: darkslategray;
+}
+/* main body, excluding nav and footer, margin top is used to add space of nav */
+main {
+  margin: 20px;
+  margin-top: 80px;
+
+  font-family: "Book Antiqua", "Calisto MT", Didot, serif;
+}
+
+/* sections, adds borders, colour and padding */
+section {
+  padding: 1%;
+
+  border-style: solid;
+
+  background-color: white;
+}
+
+/* headers, adds header colours, padding, and borders */
+header {
+  padding: 10px;
+  margin-bottom: 10px;
+
+  text-align: center;
+  color: white;
+
+  border-style: solid;
+  border-color: darkslategray;
+
+  background-color: black;
+}
+
+/* footer */
+footer {
+  overflow: hidden;
+
+  text-indent: 40px;
+  color: white;
+
+  background-color: black;
+}
+
+/* nav, hides excess and sets color
+position keeps the nav bar at the top
+top makes it so the navbar is flush with the top 
+fixed menu was found here: https://www.w3schools.com/howto/howto_css_fixed_menu.asp */
+nav {
+  overflow: hidden;
+  position: fixed;
+
+  top: 0;
+  width: 100%;
+
+  color: white;
+
+  background-color: black;
+}
+
+/* list item with an 'a' value (links). The float makes the list items in a row.
+this is used with display as display handles how different values are displayed,
+block separates this list even more, so you get a nice menu look*/
+li a {
+  float: left;
+  display: block;
+
+  padding: 16px 16px;
+
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+/* This adds a hover effect when hovering over the nav bar, changes colours */
+li a:hover {
+  color: black;
+  font-weight: bold;
+
+  background-color: white;
+}
+
+/* This styles the unordered lists - specifically the nav bar */
+ul {
+  overflow: hidden;
+
+  margin: 0;
+  padding: 0;
+  width: 100%;
+
+  list-style-type: none;
+
+  background-color: black;
+}
+
 /* table modifications, mostly colour and border */
 td,
 th {
@@ -5,9 +102,10 @@ th {
   border-color: darkslategray;
 }
 th {
-  background-color: lightgray;
   border-style: solid;
   border-color: black;
+
+  background-color: lightgray;
 }
 td {
   background-color: white;
@@ -15,76 +113,6 @@ td {
 /* sets table width, takes up full screen */
 table {
   width: 100%;
-}
-/* Styles the background, and the entire website */
-body {
-  background-color: darkslategray;
-  margin: 0;
-}
-/* main body, excluding nav and footer */
-main {
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-/* sections, adds borders, colour and padding */
-section {
-  border-style: solid;
-  padding: 10px;
-  background-color: white;
-}
-
-/* headers, adds header colours, padding, and borders */
-header {
-  padding: 10px;
-  text-align: center;
-  border-style: solid;
-  border-color: darkslategray;
-  color: white;
-  background-color: black;
-  margin-bottom: 10px;
-}
-/* footer */
-footer {
-  text-indent: 40px;
-  overflow: hidden;
-  color: white;
-  background-color: black;
-}
-
-/* nav, hides excess and sets color */
-nav {
-  overflow: hidden;
-  color: white;
-  background-color: black;
-}
-/* list item with an 'a' value (links). The float makes the list items in a row.
-this is used with display as display handles how different values are displayed,
-block separates this list even more, so you get a nice menu look*/
-li a {
-  float: left;
-  display: block;
-  text-align: center;
-  color: white;
-  padding: 16px 16px;
-  text-decoration: none;
-}
-/* This adds a hover effect when hovering over the nav bar, changes colours */
-li a:hover {
-  background-color: white;
-  color: black;
-}
-
-/* This styles the unordered lists - specifically the nav bar */
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  width: 100%;
-  background-color: black;
 }
 
 /* centers the iframe */
@@ -95,11 +123,22 @@ iframe {
 
 /* adds a colour to the article */
 article {
-  background-color: lightgray;
   padding: 10px;
-}
-/* This centers figures, or where drawn pictures are being displayed */
 
+  background-color: lightgray;
+}
+
+/* This centers figures, or where drawn pictures are being displayed */
 figure {
   text-align: center;
+}
+
+/* Adds responsive image resizing
+found it here: https://www.w3schools.com/css/tryit.asp?filename=tryresponsive_image2*/
+img {
+  width: 100%;
+  height: auto;
+
+  border-style: solid;
+  border-color: darkslategray;
 }
