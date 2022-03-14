@@ -119,6 +119,7 @@ table {
 iframe {
   display: block;
   margin: 0 auto;
+  width: 80%;
 }
 
 /* adds a colour to the article */
